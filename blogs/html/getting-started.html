@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcade | HTML</title>
+
+    <link rel="stylesheet" href="../../css/home.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/articles.css">
+</head>
+
+<body>
+    <div class="main-container">
+
+        <!-- Website Banner -->
+        <div class="header">
+            <img src="../../assets/main-header.png">
+        </div>
+
+        <!-- Main Navigation -->
+        <div class="nav-bar">
+            <ul class="links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../references.html">References</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </div>
+
+        <!-- Page content -->
+        <div class="content-layout">
+            <aside class="sidebar">
+                <p>Use the links below to jump to sections!</p>
+                <a href="#intro">Intro to HTML</a><br>
+                <a href="#basics">HTML 101</a><br>
+                <a href="#tags">HTML Elements</a><br>
+                <a href="#attributes">The Attributes</a><br>
+                <a href="#examples">Code Examples</a><br>
+                <a href="#notes">My Notes</a><br>
+            </aside>
+
+            <!-- Main Content -->
+
+            <!-- Main article -->
+            <article class="article">
+
+                <header class="article-header">
+                    <p class="article-category">HTML Blog / Lesson 01</p>
+
+                    <h1 class="article-title">
+                        Getting Started with HTML
+                    </h1>
+
+                    <p class="article-meta">
+                        October 10, 2026 · 5 min read
+                    </p>
+                </header>
+
+                <section id="introduction">
+                    <h2>Intro to HTML</h2>
+
+                    <p>
+                        When it comes to creating any website or page on the web, you need the holy trinity: <b>HTML,
+                        CSS, and Javascript!</b> They are the backbone of every webpage you see on the internet, without it, you'll probably only
+                        see a plain white screen in every site you visit. Luckily, in websites like Spacehey, you don't have to to do any 
+                        Javascript at all! Hooray! Moreover, this blog will focus solely on the basics of HTML and how you can structure your profile! I'll
+                        try to explain it as simple as I can.
+                    </p>
+
+                    <p>
+                        What is HTML actually? <b>HTML</b> is short for HyperText Markup Language, it structures your webpage so that its clean and
+                        well-put together. Think of it as the builder like Felix from Wreck-it-Ralph!
+                    </p>
+
+                    <p>
+                    <p>As we go over the lessons, I will be sharing some code samples. To test the codes, you can use an
+                        online compiler like <a href="https://www.codechef.com/html-online-compiler"
+                            target="_blank">CodeChef</a> to help you run the code easily.</p>
+                    </p>
+                </section>
+
+                <section id="basics">
+                    <h2>HTML 101</h2>
+
+                    <p>
+                        In HTML, we use tags, attributes, and classes to keep things in place.
+                    </p>
+                </section>
+
+                <section id="tags">
+                    <h2>HTML Elements</h2>
+
+                    <p>
+                        HTML uses tags which we call "elements." An <b>HTML element</b> is everything from a start tag to the end
+                        tag. Tags in HTML are always enclosed by "< >" signs, and end tags always has a forward slash inside like:
+                        <center><code>&lt;h2&gt;This is an example&lt;/h2&gt;</code></center> <br>
+
+                        In the example above, <code>&lt;h2&gt;</code> is the start tag, while <code>&lt;/h2&gt;</code> is the end tag.
+                        Now that you know what are the kinds of tags, these are the actual tags that you'll probably need in coding your profile:
+                    </p>
+                    <ul>
+                        <li> <code>&lt;h1&gt;</code> - this defines the most important heading! It ranges from h1 (being
+                            the largest) and h6 (the smallest).</li>
+                        <li> <code>&lt;p&gt;</code> - defines the paragraphs or body text.</li>
+                        <li> <code>&lt;br&gt;</code> - insanely useful for making lists, this makes sure that it jumps
+                            to the next line.</li>
+                        <li><code>&lt;img src&gt;</code> - this helps you embed an image or gif on your page!</li>
+                        <li><code>&lt;center&gt;</code> - this will center the contents inside this tag.</li>
+                    </ul>
+
+                    <p>Important: Always make sure that you use "< >" these signs when mentioning HTML tags.</p>
+                </section>
+
+                <section id="attributes">
+                    <h2>HTML Attributes</h2>
+
+                    <p>
+                        <b>HTML attributes</b> provide additional information about our HTML elements. It's important to keep
+                        in mind that all HTML elements can have attributes and they are always specified in the start tag.
+                    </p>
+
+                    <ul>
+                        <li> <code>&lt;src&gt;</code> - in the <img> tag, the src specifies the actual source path like
+                            the source link so that it knows what image are you referring to.</li>
+                        <li> <code>&lt;width&gt;</code> <code>&lt;height&gt;</code> - in the <img> tag, you can
+                            absolutely use width and height attributes to specify an image's dimensions (in pixels).
+                        </li>
+                        <li> <code>&lt;alt&gt;</code> - this shows an alternate text that will show if an image is
+                            unable to load correctly or when a user uses a screen reader. </li>
+                        <li><code>&lt;style&gt;</code> - this attribute is used to add styles to an HTML element (e.g.,
+                            color, font, size, and etc.)</li>
+                    </ul>
+                </section>
+
+                <section id="classes">
+                    <h2>HTML Classes</h2>
+
+                    <p>
+                        Onto the more interesting part of HTML is the HTML classes. This is a genuine game changer
+                        because classes are the heart of HTML! To explain it
+                        better, just think of classes as containers. For example, you want to create a vinyl gallery of
+                        your favorite albums or songs, you need a class
+                        to put all the code for the vinyl gallery in a container so that it doesn't affect the outside
+                        elements.
+                    </p>
+                    <p>
+                        When making a class, we use the <code>&lt;div&gt;</code> tag, followed by either a
+                        <code>&lt;class&gt;</code> or an <code>&lt;id&gt;</code>, then
+                        assign its value inside quotation marks like this: <br>
+                        <center><code>&lt;div class="elijah-woods"&gt;</code></center>
+                        <center><code>&lt;div id="elijah-woods"&gt;</code></center>
+                    </p>
+
+                    <ul>
+                        <li> <code>&lt;class&gt;</code> - you mostly use this when you want a container.</li>
+                        <li> <code>&lt;id&gt;</code> - you use this when you want to apply a completely unique styling
+                            in you code for CSS.</li>
+                    </ul>
+                </section>
+
+                <section id="examples">
+                    <h2>Code Examples</h2>
+
+                    <p>Now that we've gone over the basic stuff, here's how you can actually apply them to your code!
+                        Paste the code below to the online compiler I mentioned above and test it by running the code.
+                    </p>
+                    <pre><code>&lt;h1&gt;May the force be with you!&lt;/h1&gt;<br>&lt;p&gt;Doth mother know you weareth her drapes?&lt;/p&gt;<br>&lt;img src="https://i.pinimg.com/736x/84/4e/87/844e8724999b4b11bbb0682c67a60138.jpg"&gt;</code></pre>
+
+                    <p>How about we try using both class and attributes as well? Try this out first! Paste this is the index.html and run it.</p>
+        
+                    <pre><code>&lt;center&gt;
+&lt;h2&gt;My Blinkies&lt;/h2&gt;
+&lt;div class="blinkies"&gt;
+
+&lt;img src="https://64.media.tumblr.com/78800541e4e78db148e79b60b4b66752/be43f0b793a96886-16/s250x400/da4d0cf307efc890fada8dd01466cf2b5a0d9456.webp"/&gt;
+&lt;img src="https://external-media.spacehey.net/media/sFzXE5evkx197kFzBoiFI3OrdeXKMZBvUc-s07_nOz-w=/https://i.ibb.co/Ldk3gLFz/tumblr-f6848f688e5dee815f974ac64a79ce15-eb27c61d-250.gif"/&gt;
+&lt;img src="http://blinki.es/blinkies/movie/rocky.gif"/&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;h2&gt;My Photo Grid&lt;/h2&gt;
+&lt;div class="photo-window"&gt;
+    &lt;div class="photo-grid"&gt;
+        &lt;img src="https://i.pinimg.com/736x/0c/0e/4c/0c0e4cf79680400c07d5d06b7b6d49da.jpg" width="200" height="200"&gt;
+        &lt;img src="https://i.pinimg.com/736x/a1/89/5d/a1895d74ef703d6916d6d73152724814.jpg" width="200" height="200"&gt;
+        &lt;img src="https://i.pinimg.com/736x/df/94/03/df9403ebaeb327540ec2afa0fe25d5a9.jpg" width="200" height="200"&gt;
+        
+        &lt;img src="https://i.pinimg.com/736x/0c/0e/4c/0c0e4cf79680400c07d5d06b7b6d49da.jpg" width="200" height="200"&gt;
+        &lt;img src="https://i.pinimg.com/736x/a1/89/5d/a1895d74ef703d6916d6d73152724814.jpg" width="200" height="200"&gt;
+        &lt;img src="https://i.pinimg.com/736x/df/94/03/df9403ebaeb327540ec2afa0fe25d5a9.jpg" width="200" height="200"&gt;
+        
+        &lt;img src="https://i.pinimg.com/736x/0c/0e/4c/0c0e4cf79680400c07d5d06b7b6d49da.jpg" width="200" height="200"&gt;
+        &lt;img src="https://i.pinimg.com/736x/a1/89/5d/a1895d74ef703d6916d6d73152724814.jpg" width="200" height="200"&gt;
+        &lt;img src="https://i.pinimg.com/736x/df/94/03/df9403ebaeb327540ec2afa0fe25d5a9.jpg" width="200" height="200"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/center&gt;</code></pre>
+
+                    <p>
+                        Notice how we used both classes and also applied attributes to the images inside the photo grid? By specifying the width and height of 
+                        the image, you get more control on how it sized on screen. But, if you don't specify them then it will automatically use the original 
+                        dimensions of the image which someones you don't want because it would either be too big or too small. Right now, div class is completely 
+                        useless because we don't have a CSS yet, but just keep in mind on how a class / container is structured.
+                </p>
+                <section id="notes">
+                    <h2>My Notes</h2>
+
+                    <div class="article-note">
+                        <p>
+                            Remember: practice each concept by building something small.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Previous and next article links -->
+                <nav class="article-navigation">
+                    <a href="../../index.html">
+                        ← Back to Home
+                    </a>
+
+                    <a href="../../blogs/css/css-basics.html">
+                        Next Article →
+                    </a>
+                </nav>
+
+            </article>
+        </div>
+</body>
+
+</html>
+<!--<pre><code>&lt;h1&gt;Hello, world!&lt;/h1&gt;</code></pre>-->
