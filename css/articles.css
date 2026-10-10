@@ -1,0 +1,144 @@
+/* =========================
+   ARTICLE LAYOUT
+========================= */
+
+.article {
+    flex: 1;
+    min-width: 0;
+    padding: 0 8px;
+    line-height: 1.8;
+    overflow-wrap: break-word;
+}
+
+.article-header {
+    margin-bottom: 24px;
+    /* border-bottom removed for minimalist look */
+}
+
+.article-category {
+    margin: 0 0 8px;
+    color: #8b654f;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.article-title {
+    margin: 0 0 10px;
+    color: #252525;
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+.article-meta {
+    margin: 0;
+    color: #777;
+    font-size: 12px;
+}
+
+/* =========================
+   ARTICLE TEXT
+========================= */
+
+.article h2 {
+    margin: 32px 0 12px;
+    color: #252525;
+    font-size: 22px;
+    scroll-margin-top: 20px;
+}
+
+.article h3 {
+    margin: 24px 0 8px;
+    color: #493a32;
+    font-size: 17px;
+}
+
+.article p {
+    margin: 0 0 16px;
+    text-align: justify;
+}
+
+.article a {
+    color: #395caa;
+}
+
+.article a:hover {
+    color: #8b654f;
+}
+
+.article section {
+    scroll-margin-top: 20px;
+}
+
+/* =========================
+   CODE BLOCKS
+========================= */
+
+.article pre {
+    max-width: 100%;
+    height: 180px;
+    padding: 12px;
+    overflow: auto;
+    background-color: #ffffff;
+    color: #252525;
+    border: 1px solid #7f7f7f;
+    border-radius: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.article code {
+    font-family: Consolas, "Courier New", monospace;
+}
+
+/* =========================
+   NOTES
+========================= */
+
+.article-note {
+    margin: 20px 0;
+    padding: 14px;
+    background-color: #f7f1e8;
+    border-left: 4px solid #899b82;
+}
+
+.article-note p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================
+   PREVIOUS / NEXT LINKS
+========================= */
+
+.article-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ded4c5; /* Kept the bottom navigation border for separation, but you can remove this too if you want it entirely line-free! */
+}
+
+.article-navigation a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* =========================
+   MOBILE LAYOUT
+========================= */
+
+@media (max-width: 600px) {
+    .article-title {
+        font-size: 25px;
+    }
+
+    .article h2 {
+        font-size: 20px;
+    }
+
+    .article-navigation {
+        flex-direction: column;
+    }
+}
