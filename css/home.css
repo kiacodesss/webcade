@@ -1,0 +1,66 @@
+
+/* Main homepage area */
+.home-container {
+    flex: 1;
+    min-width: 0;
+}
+
+.home-container h1 {
+    margin: 0 0 5px;
+    font-size: 26px;
+}
+
+.intro {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Stack the blog cards vertically */
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Individual blog card */
+.blog-card {
+    display: flex;
+    align-items: stretch;
+    gap: 14px;
+    padding: 12px;
+    background-color: #dce8f8;
+    border: 1px solid #b8cce9;
+}
+
+/* Thumbnail */
+.blog-card > img {
+    flex: 0 0 150px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Card text */
+.blog-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.blog-info h2 {
+    margin: 0 0 8px;
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.blog-info p {
+    margin: 0 0 10px;
+}
+
+.blog-info a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.blog-info a:hover {
+    text-decoration: underline;
+}

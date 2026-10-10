@@ -1,0 +1,145 @@
+
+/* Basic reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #252525;
+    background-color: #0B1235;
+}
+
+/* Center the entire website */
+.main-container {
+    width: 100%;
+    max-width: 900px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+
+.about-page {
+    margin: 0 auto;
+}
+
+/* Header banner */
+.header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Horizontal navigation bar */
+.nav-bar {
+    background-color: black;
+    border-bottom: 2px solid #899b82;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links a {
+    display: block;
+    padding: 5px 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* Sidebar and main content */
+.content-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 16px;
+}
+
+/* Left sidebar */
+.sidebar {
+    flex: 0 0 175px;
+    min-width: 0;
+    padding: 12px;
+    background-color: #f7f1e8;
+    border: 1px solid #ded4c5;
+}
+
+.sidebar h3 {
+    margin: 0 0 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #ded4c5;
+}
+
+.sidebar p {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    padding-left: 18px;
+}
+
+.sidebar li {
+    margin-bottom: 5px;
+}
+
+/* General links */
+a {
+    color: #395caa;
+}
+
+a:hover {
+    color: #8b654f;
+}
+
+/* Footer */
+.footer {
+    padding: 14px;
+    text-align: center;
+    background-color: #f7f1e8;
+    border-top: 1px solid #ded4c5;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive layout for phones */
+@media (max-width: 600px) {
+    .content-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    .home-container {
+        width: 100%;
+    }
+
+    .blog-card {
+        flex-direction: column;
+    }
+
+    .blog-card > img {
+        width: 100%;
+        height: 180px;
+    }
+}
